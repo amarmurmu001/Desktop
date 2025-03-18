@@ -9,61 +9,61 @@
 
 <body>
     <script>/**
-    //wap to findout the number is positive or negative
-    let a = parseFloat(prompt("Enter the 1st number"));
-    let b = parseFloat(prompt("Enter the 2nd number"));
-    if (a > b) {
-        alert("a is greater than b");
-    } else {
-        alert("b is greater than a");
-    }
+//wap to findout the number is positive or negative
+let a = parseFloat(prompt("Enter the 1st number"));
+let b = parseFloat(prompt("Enter the 2nd number"));
+if (a > b) {
+alert("a is greater than b");
+} else {
+alert("b is greater than a");
+}
 
-    a = parseFloat(prompt("Enter 1st number"));
-    b = parseFloat(prompt("Enter 2nd number"));
-    let c = parseInt(prompt("1. addition 2. subtraction 3. multiplication 4. division"));
-    if (c === 1) {
-        alert(a + b);
-    } else if (c === 2) {
-        alert(a - b);
-    } else if (c === 3) {
-        alert(a * b);
-    } else if (c === 4) {
-        alert(a / b);
-    } else {
-        alert("Invalid operation");
-    }
+a = parseFloat(prompt("Enter 1st number"));
+b = parseFloat(prompt("Enter 2nd number"));
+let c = parseInt(prompt("1. addition 2. subtraction 3. multiplication 4. division"));
+if (c === 1) {
+alert(a + b);
+} else if (c === 2) {
+alert(a - b);
+} else if (c === 3) {
+alert(a * b);
+} else if (c === 4) {
+alert(a / b);
+} else {
+alert("Invalid operation");
+}
 
-    //wap to findout the number is even or odd
-    a = parseFloat(prompt("enter a number"));
-    if (a % 2 === 0) {
-        alert("number is even");
-    } else {
-        alert("number is odd");
-    }
+//wap to findout the number is even or odd
+a = parseFloat(prompt("enter a number"));
+if (a % 2 === 0) {
+alert("number is even");
+} else {
+alert("number is odd");
+}
 
-    //wap to findout the largest in three number
-    a = parseFloat(prompt("Enter the 1st number"));
-    b = parseFloat(prompt("Enter the 2nd number"));
-    c = parseFloat(prompt("Enter the 3rd number"));
-    if (a > b && a > c) {
-        alert("a is greater than b and c");
-    } else if (b > a && b > c) {
-        alert("b is greater than a and c");
-    } else {
-        alert("c is greater than a and b");
-    }
+//wap to findout the largest in three number
+a = parseFloat(prompt("Enter the 1st number"));
+b = parseFloat(prompt("Enter the 2nd number"));
+c = parseFloat(prompt("Enter the 3rd number"));
+if (a > b && a > c) {
+alert("a is greater than b and c");
+} else if (b > a && b > c) {
+alert("b is greater than a and c");
+} else {
+alert("c is greater than a and b");
+}
 
-        //wap to found out grade of student
-        let marks = parseInt(prompt("Enter the marks"));
-        if (marks >= 70) {
-            alert("A");
-        } else if (marks >= 50) {
-            alert("B");
-        } else if (marks >= 30) {
-            alert("C");
-        } else {
-            alert("Fail");
-        }**/
+//wap to found out grade of student
+let marks = parseInt(prompt("Enter the marks"));
+if (marks >= 70) {
+alert("A");
+} else if (marks >= 50) {
+alert("B");
+} else if (marks >= 30) {
+alert("C");
+} else {
+alert("Fail");
+}**/
 
         //pragram is reapeted in certain number of times is called loop
         //need of loop
@@ -87,12 +87,12 @@
         //3. do while loop
 
         //wap to print 1 to 10 number by using for loop
-/**
-        for ( i = 1; i <= 10; i++) {
-        document.write(i);
-        document.write("<br>");
-
-        }**/
+        /**
+                for ( i = 1; i <= 10; i++) {
+                document.write(i);
+                document.write("<br>");
+        
+                }**/
 
         //wap to print 1 to 10 number and calculate sum and average
         /**
@@ -107,15 +107,173 @@
         document.write("Average is " + sum / 10);
         **/
         //wat a program to use of break keyword in for loop
+        /**
+        for (i = 1; i <= 10; i++) {
+            if (i == 7)
+                //break;
+                continue;
+            document.write(i);
+            document.write("<br>");
+        }**/
 
-        for( i = 1; i <= 10; i++){
-        if (i == 7) 
-        break;
-        document.write(i);
-        document.write("<br>");
+        //wap to find out factorial number
+        /**
+        let fact = 1;
+        for (i = 4; i >= 1; i--) {
+            fact = fact * i;
         }
+        document.write("Factorial is " + fact);
+        **/
+        /**
+        //wap to print to table of 2
+        for (i = 1; i <= 10; i++) {
+            document.write( 2 * i);
+            document.write("<br>");
+        }**/
+
+        //program is not executed at least one time is called do while loop
+        //wap to print reverse number 10 to 1 by using while loop
+        // i=10;
+        // while (i >= 1) {             
+        //     document.write(i);
+        //     document.write("<br>");
+        //     i--;
+        // }
+
+        // ans = prompt("Do you want to conti(y/n)");
+        // while (ans=='y') {
+        //     num=parseInt(prompt("Find sqr of :"));
+        //     sqr=num*num;
+        //     alert("sqr is " + sqr);
+        //     ans = parseInt(prompt("Do you want to conti(y/n)"));
+        // }
+
+        // do {
+        //     ans = prompt("Do you want to conti(y/n)");
+        //     num=parseInt(prompt("Find sqr of :"));
+        //     sqr=num*num;
+        //     alert("sqr is " + sqr);
+        //     ans = prompt("Do you want to conti(y/n)");
+        // } while (ans=='y');
+
+        //wap a program for online bank using while and do while loop 1.saving 2.current 3.exit
+
+        // ans = prompt("Do you want to conti(y/n)");
+        // while (ans == 'y') {
+        //     option = parseInt(prompt("1. Saving 2. Current 3. Exit"));
+        //     if (option === 1) {
+        //         amount = parseInt(prompt("Enter the amount"));
+        //         if (amount >= 1000) {
+        //             alert("Saving A/C open");
+        //         } else {
+        //             alert("Sorry");
+        //         }
+        //     } else if (option === 2) {
+        //         amount = parseInt(prompt("Enter the amount"));
+        //         if (amount >= 5000) {
+        //             alert("Current A/C open");
+        //         } else {
+        //             alert("Sorry");
+        //         }
+        //     } else {
+        //          break;
+        //     }
+        //     ans = prompt("Do you want to conti(y/n)");
+        // }
+        // //now in do while
+
+        // do {
+
+        //     option = parseInt(prompt("1. Saving 2. Current 3. Exit"));
+        //     if (option === 1) {
+        //         amount = parseInt(prompt("Enter the amount"));
+        //         if (amount >= 1000) {
+        //             alert("Saving A/C open");
+        //         } else {
+        //             alert("Sorry");
+        //         }
+        //     } else if (option === 2) {
+        //         amount = parseInt(prompt("Enter the amount"));
+        //         if (amount >= 5000) {
+        //             alert("Current A/C open");
+        //         } else {
+
+        //             alert("Sorry");
+        //         }
+        //     } else {
+        //         break;
+        //     }
+        //     ans = prompt("Do you want to conti(y/n)");
+
+        // } while (ans == 'y');
+
+        // function india() {
+        //     alert("Welcome to India");
+        // }
+        // alert("Hello");
+        // india();
+        // alert("Bhn k lode.");
+
+        // // //wap to swap of 2 number by use of parameterized funtion\
+        // function swap(a, b) {
+        //     temp = a;
+        //     a = b;
+        //     b = temp;
+        // }
+        // // a = prompt("Enter the 1st number");
+        // // b = prompt("Enter the 2nd number");
+        // // alert(a + b);
+
+        // //wap to swap of 2 number by use of parameterized funtion
+        // do {
+        // ans = prompt("Do you want to conti(y/n)");
+        // a = prompt("Enter the 1st number");
+        // b = prompt("Enter the 2nd number");
+        // alert("Before swap "+a + b);
+        // swap(a, b);
+        // alert("after swap "+a + b);
+        // }while(ans=='y');
+
+        //wap to findout factorial by use of funtion
+        // ans = prompt("Do you want to conti(y/n)");
+        // while(ans=='y'){
+        // x=parseInt(prompt("Enter the number"));
+        // function fact(x) {
+        //     fact = 1;
+        //     for (i = x; i >= 1; i--) {
+        //         fact = fact * i;
+        //     }
+        //     return fact;
+        // }
+        // alert("Factorial is " + fact(  x));
+        // ans = prompt("Do you want to conti(y/n)");
+        // }
+
         
+        function paytm(){
+            accno = 1111;
+            ac = parseInt(prompt("Enter the account number"));
+            if (accno == ac) {
+                otpn =1234;
+                otp = parseInt(prompt("Enter the otp"));
+                if (otpn == otp) {
+                    tamount = parseInt(prompt("Enter the amount"));
+                    if (tamount >= 1) {
+                        alert("Payment successfull");
+                    } else {
+                        alert("Insufficient balance");
+                    }
+                } else {
+                    alert("Invalid otp");
+                }
+            } else {
+                alert("Invalid account number");
+            }
+        }
+
     </script>
+
+    <button type="button" onclick="paytm()">Pay</button>
 
 </body>
 
