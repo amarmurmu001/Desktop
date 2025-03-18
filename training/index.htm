@@ -249,31 +249,114 @@ alert("Fail");
         // ans = prompt("Do you want to conti(y/n)");
         // }
 
-        
-        function paytm(){
-            accno = 1111;
-            ac = parseInt(prompt("Enter the account number"));
-            if (accno == ac) {
-                otpn =1234;
-                otp = parseInt(prompt("Enter the otp"));
-                if (otpn == otp) {
-                    tamount = parseInt(prompt("Enter the amount"));
-                    if (tamount >= 1) {
-                        alert("Payment successfull");
-                    } else {
-                        alert("Insufficient balance");
+
+        // function paytm(){
+        //     accno = 1111;
+        //     ac = parseInt(prompt("Enter the account number"));
+        //     if (accno == ac) {
+        //         otpn =1234;
+        //         otp = parseInt(prompt("Enter the otp"));
+        //         if (otpn == otp) {
+        //             tamount = parseInt(prompt("Enter the amount"));
+        //             if (tamount >= 1) {
+        //                 alert("Payment successfull");
+        //             } else {
+        //                 alert("Insufficient balance");
+        //             }
+        //         } else {
+        //             alert("Invalid otp");
+        //         }
+        //     } else {
+        //         alert("Invalid account number");
+        //     }
+        // }
+
+
+        function banking() {
+            alert("Welcome to Online banking");
+            n = prompt("Do you want to continue(y/n)");
+            while (n == 'y') {
+                a = parseInt(prompt("1. A/c Dept 2. Loan Dept 3. Exit"));
+                if (a == 1) {
+                    x = prompt("welcome to A/c Dept continue(y/n)");
+                    while (x == 'y') {
+                        b = parseInt(prompt("1. Saving 2. Current 3. Exit"));
+                        if (b == 1) {
+                            saving();
+                        } else if (b == 2) {
+                            current();
+                        } else {
+                            alert("Exit");
+                        }
+                        x = prompt("welcome to A/c Dept continue(y/n)");
                     }
-                } else {
-                    alert("Invalid otp");
                 }
-            } else {
-                alert("Invalid account number");
+                else if (a == 2) {
+                    z = prompt("welcome to Loan Dept continue(y/n)");
+                    while (z == 'y') {
+                        c = parseInt(prompt("1. Personal Loan 2. Edu loan 3. Exit"));
+                        if (c == 1) {
+                            personal();
+                        } else if (c == 2) {
+                            edu();
+                        }
+                        else {
+                            alert("Exit");
+                        }
+                        z = prompt("welcome to Loan Dept continue(y/n)");
+
+                    }
+                }else
+                    alert("Exit")
+                
+                    n = prompt("Do you want to continue(y/n)");
             }
+        }
+
+        function saving() {
+            alert("Saving A/c");
+            amount = parseInt(prompt("Enter the amount"));
+            if (amount >= 1000) {
+                alert("Saving A/C open");
+            } else {
+                alert("Sorry");
+            }
+        }
+        function current() {
+            alert("Current A/c");
+            amount = parseInt(prompt("Enter the amount"));
+            if (amount >= 5000) {
+                alert("Current A/C open");
+            } else {
+                alert("Sorry");
+            }
+        }
+        function personal() {
+            alert("Personal Loan");
+            amount = parseInt(prompt("Enter the amount"));
+            if (amount <= 10000) {
+                alert("Personal Loan open");
+            } else {
+                alert("Sorry");
+            }
+        }
+        function edu() {
+            alert("Edu Loan");
+            marks = parseInt(prompt("Enter marks %"));
+            q = parseInt(prompt("Enter the amount of loan"));
+            if (marks >= 60) {
+                alert('You can get loan of Rs.' + q * 100);
+            } else if (marks > 30 && marks < 60) {
+                alert("you get loan of Rs "+q*50);
+            } else {
+                alert("You are no eligible for loan");
+            }
+
         }
 
     </script>
 
-    <button type="button" onclick="paytm()">Pay</button>
+    <button type="button" onclick="banking()">online banking</button>
 
 </body>
 
