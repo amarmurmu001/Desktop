@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        // //Wap to create class and object in javascript
+        // class Car{
+        //     constructor(name, year){
+        //         this.name = name;
+        //         this.year = year;
+        //     }
+        // }
+        // let myCar = new Car("Ford", 2014);
+        // let myCar1 = new Car("Audi", 2019);
+        // document.write(myCar.name + " " + myCar.year + "<br>");
+        // document.getElementById("demo").innerHTML = myCar1.name + " " + myCar1.year;
+        
+        //we are creating object by three methods in javascript
+        //1. using object literal
+        //2. instance method object
+        //3. using constructor method
+
+    //     //1. using object literal
+    //     do{
+    //     first=prompt("Enter first name");
+    //     last=prompt("Enter last name");
+    //     age1=prompt("Enter age");
+    //     eye=prompt("Enter eye color");
+    //      person = {
+    //         firstName: first,
+    //         lastName: last,
+    //         age: age1,
+    //         eyeColor: eye
+    //     };
+    //     document.write(person.firstName + " " + person.lastName +" "+ person.age+ "<br>");
+    //     ans=prompt("Do you want to continue(y/n)");
+    // }while(ans=='y')
+
+    //to calculate 10 % of bonus from salary of employee using literal method
+    // do{
+    //     empno=prompt("Enter employee number");
+    //     name=prompt("Enter name of employee");
+    //     salary=prompt("Enter salary of employee");
+    //     bonus = salary * 0.10;
+    //     person = {
+        //         id: empno,
+        //         name: name,
+        //         salary: salary,
+        //         bonus: bonus
+        //     };
+        //     document.write(person.id+" "+person.name + " " + person.salary +" "+ person.bonus+ "<br>");
+        //     ans=prompt("Do you want to continue(y/n)");
+        // }while(ans=='y')
+        
+        //Object is created by using new Object() 
+        
+            // var emp = new Object();
+            // emp.empno = 101;
+            // emp.name = "Amar";
+            // emp.salary = 50000; 
+        //     // document.write(emp.empno + " " + emp.name + " " + emp.salary);
+        
+        // ans=prompt("Do you want to continue(y/n)");
+        // while(ans=='y'){
+        // emp = new Object();
+        // emp.empno = prompt("Enter employee number");
+        // emp.name = prompt("Enter name of employee");
+        // emp.salary = prompt("Enter salary of employee");
+        // document.write(emp.empno+" "+emp.name + " " + emp.salary + "<br>");
+        // ans=prompt("Do you want to continue(y/n)");
+        // }
+
+        //Object is created by the name of cunstructor is called parameterized constructor
+        //Class name and function name should be same
+        //The name of the function is called constructor
+        //this is a keyword which is used to refer current object
+        
+        // function emp(id, name, salary){
+        //     this.id = id;
+        //     this.name = name;
+        //     this.salary = salary;
+        // }
+        // e=new emp(101, "Amar", 50000);
+        // document.write(e.id + " " + e.name + " " + e.salary);
+
+        ///WAP to inherit super  class in subclass by use of inheritance in javascript
+        // class Car{
+        //     constructor(brand){
+        //         this.carname = brand;
+        //     }
+        //     present(){
+        //         return 'I have a ' + this.carname;
+        //     }
+        // }
+        // class Model extends Car{
+        //     constructor(brand, mod){
+        //         super(brand);
+        //         this.model = mod;
+        //     }
+        //     show(){
+        //         return this.present() + ', it is a ' + this.model;
+        //     }
+        // }
+        // mycar = new Model("Ford", "Mustang");
+        // document.write(mycar.show());
+
+        //wap to create validation in the text box
+        function validateForm(){
+            var x = document.forms["myForm"]["fname"].value;
+            if(x == ""){
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+        </script>
+        <h1>Javascript Text validation</h1>
+        <form name="myForm"  onsubmit="return validateForm()" method="post">
+            Name: <input type="text" name="fname">
+            <input type="submit" value="Submit">
+        </form>
+</body>
+</html>
