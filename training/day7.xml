@@ -1,0 +1,20 @@
+<ugc>
+<uni> DELHI UNIVERSITY !
+<collage> RIT COLLAGE !
+<stream> ALL STREAM HERE !
+<sci>
+<rollno> 001 </rollno>
+MATH=55 PHY=65 CHEM=75
+</sci>
+<art>
+<name> Amar Murmu</name>
+GEO=55 HINDI=65 POLSCI =75
+</art>
+<com>
+<rollno> 050 </rollno>
+A/C=55 ECO=65 BS=75
+</com>
+</stream>
+</collage>
+</uni>
+</ugc>

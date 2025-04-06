@@ -1,62 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day 6</title>
 </head>
+
 <body>
     <script>
         //Size is a keyword to show the dimension of array
         //clear funtion used to erase the data of  array
         //wap to show the size and clear of map array data
 
-        
+
         // document.write("Size before invoking the clear(): "+ map.size+"</br>");
         // map.clear();
         // document.write("Size after invoking the clear(): "+ map.size+"</br>");
-        
+
         //Entrie is a inbuilt funtion ..to pass bulk of dataset into veriable 
         // var map = new Map()
         // map.set(1,"Amar");
         // map.set(2,"Rohit");
         // map.set(3,"Bittu");
-        
+
         // var itr= map.entries();
         // document.writeln( itr.next().value+"</br>");
         // document.writeln( itr.next().value+"</br>");
         // document.writeln( itr.next().value+"</br>");
-        
+
         // to use of entries and size method in map using for loop
-        
+
         // var map = new Map()
         // map.set(1,"Amar");
         // map.set(2,"Rohit");
         // map.set(3,"Bittu");
-        
+
         // var itr = map.entries();
         // for (i=0;i<map.size;i++){
         //     document.writeln( itr.next().value+"</br>");
         // }
 
+
+
+
+        // //wap to return key from array using keys method
+        // var map = new Map()
+        // map.set(1,"Amar");
+        // map.set(2,"Rohit");
+        // map.set(3,"Bittu");
+
+        // var itr = map.keys();
+        // for (i=0;i<map.size;i++){
+        //     document.writeln( itr.next().value + "</br>");
+        // }
+
+
+
+        //values is a inbuilt funtion to return the value of array
+        //wap to print the value of funtion in map using forEach
+
+        // var map = new Map()
+        // map.set(1, "Amar");
+        // map.set(2, "Rohit");
+        // map.set(3, "Bittu");
+
+        // document.writeln("Fetching values: " + "<br>");
+        // function display(values) {
+        //     document.writeln(values + "<br>");
+        // }
+        // map.forEach(display);
         
         
+        //wap to use of get method in map
         
-        //wap to return key from array using keys method
-        var map = new Map()
-        map.set(1,"Amar");
-        map.set(2,"Rohit");
-        map.set(3,"Bittu");
+        // var map = new Map()
+        // map.set(1, "Amar");
+        // map.set(2, "Rohit");
+        // map.set(3, "Bittu");
         
-        var itr = map.keys();
-        for (i=0;i<map.size;i++){
-            document.writeln( itr.next().value+"</br>");
+        // document.writeln(map.get(1) + "<br>");
+        // document.writeln(map.get(2) + "<br>");
+        // document.writeln(map.get(3));
+        
+        
+        //it returns boolen operation in array to return true or false
+        //if key is existing in array result will be true otherwise false
+        //wap to use of has method in map
+        //has method perform task based on key only
+
+        // var map = new Map()
+        // map.set(1, "Amar");
+        // map.set(2, "Rohit");
+        // map.set(3, "Bittu");
+        
+        // document.writeln(map.has(5) + "<br>");
+        
+        
+        //to access key and values by use of funtion using forEach loop
+        // var map = new Map()
+        // map.set(1, "Amar");
+        // map.set(2, "Rohit");
+        // map.set(3, "Bittu");
+        // map.set(1, "Amaru");
+        
+        // document.writeln("Fetching values and keys: " + "<br>");
+        // function display(values,key) {
+        //     document.writeln(values +" "+key +"<br>");
+        // }
+        // map.forEach(display);
+
+        //set does not enter duplicate values in array 
+
+        
+        //EXCEPTION HANDELING IN JS
+        //try block is used to write the code that may throw an exception
+        //to control illigel method and error of program execute of application is called exception handeling
+        //type of exception
+        //1.checked exception - data is illegely stored in format of table and illigel record is format of file is called checked exception 
+        //// 1.sql exception- illigely stored data in table
+        //// 2.io exception- illigely record data format in file  
+        //2.unchecked exception - 
+        //it is classified into 
+        // arithmetic exception - divide by zero
+        // null pointer exception - null value is assigned to object
+        // array index out of bound exception - array index is out of bound
+        ///wap try and catch to handel of illigel event and run of operation
+
+        // try{
+        //     var a = [1,2,3,4,5];
+        //     document.writeln(a);
+        //     document.writeln(b);
+        // }catch(e){
+        //     alert("There is erro which shows "+e);
+        // }
+
+        //wap to use of finally block in exception handeling
+        // try{
+        //     var a = 2;
+        //     if(a==2){
+        //         document.write("ok");
+        //     }  
+        // }catch(e){
+        //     alert("Error found: "+e.message);
+        // }finally{
+        //     alert("Value of a is "+a);
+        // }   
+
+        //throw control a particular funtion
+        try{
+            throw "An error occured";
+        } 
+        catch(e){
+            document.write("Error: "+e);
         }
+        </script>
+</body>
 
-
-
-
-
-</script>
-    </body>
 </html>
